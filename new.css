@@ -4,3 +4,15 @@
 * Author: charies
 * Date: 2010-12-16
 */
+.myGame .mg-self a{
+	display:block;
+	border:1px solid #F8F8F8;
+	background:url(images/mg-b1.jpg) repeat-x 0 0;
+	outline:none;}
+
+.myGame .mg-self a:hover{
+	background:#FCFCFC url(images/mg-b2.png) no-repeat 100% 50%;}
+	
+	
+.myGame .mg-self a:active{
+	background:#F0F0F0 url(images/mg-b2.png) no-repeat 100% 50%;}
