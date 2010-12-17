@@ -4,15 +4,20 @@
 * Author: charies
 * Date: 2010-12-16
 */
-.myGame .mg-self a{
-	display:block;
-	border:1px solid #F8F8F8;
-	background:url(images/mg-b1.jpg) repeat-x 0 0;
-	outline:none;}
-
-.myGame .mg-self a:hover{
-	background:#FCFCFC url(images/mg-b2.png) no-repeat 100% 50%;}
+.myGame-tit{margin:0 15px;border-bottom:1px solid #E3E3E3;}
+.myGame-tit h3{font-size:14px;font-weight:700;line-height:32px;}
 	
-	
-.myGame .mg-self a:active{
-	background:#F0F0F0 url(images/mg-b2.png) no-repeat 100% 50%;}
+	/*mg-self*/
+	.myGame{margin:12px 15px 0;min-height:500px;_height:500px;}
+	.myGame .mg-self a{display:block;border:1px solid #EAEAEA;background:url(images/mg-b1.jpg) repeat-x 0 0;outline:none;color:#333;text-decoration:none;line-height:18px;margin:10px 0; -webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+	.myGame .mg-self a:hover{background:#FCFCFC url(images/mg-b2.png) no-repeat 98% 50%;color:#333;cursor:pointer;}
+	.myGame .mg-self a:active{background:#F9F9F9 url(images/mg-b2.png) no-repeat 98.5% 50%;}
+	.myGame .mg-self .mg-self-name{font-size:14px;font-weight:700;margin:12px 0 4px;}
+	.myGame .mg-self .mg-self-time{color:#969696;}
+	.myGame .mg-self dl dt,
+	.myGame .mg-self dl dd{float:left;display:inline;}
+	.myGame .mg-self dl dt{width:120px;height:57px;overflow:hidden;padding:12px 36px 12px 12px;}
+	.myGame .mg-self dl dd{width:70%;}
+	 
+	.myGame .mg-self dl:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+	.myGame .mg-self dl{zoom:1;}
