@@ -13,6 +13,11 @@
 	/*mg-tpl-btn*/
 	.myGame .mg-tpl-btn{display:block;width:96px;line-height:25px;height:25px;text-align:center;color:#333;text-decoration:none;border:1px solid #EAEAEA;font-family:"微软雅黑";font-weight:700;background:url(images/mg-b1.jpg) repeat-x 0 0;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;outline:none;}
 	.myGame .mg-tpl-btn:hover{background-color:#EAEAEA;color:#333;}
+	/*mg-steps*/
+	.myGame .mg-steps li{
+		list-style:inside decimal;
+		font:700 18px "微软雅黑";
+		color:#ccc;}
 	
 	/*mg-self*/
 	.myGame{margin:12px 15px 0;min-height:500px;_height:500px;}
