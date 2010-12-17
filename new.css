@@ -6,14 +6,23 @@
 */
 .myGame-tit{margin:0 15px;border-bottom:1px solid #E3E3E3;}
 .myGame-tit h3{font-size:14px;font-weight:700;line-height:32px;}
+	/*mg-tpl*/
+	.myGame .mg-tpl-hd{font-size:13px;line-height:30px;height:30px;overflow:hidden;color:#333;background:url(images/mg-b1.jpg) repeat-x 0 0;border:1px solid #EAEAEA;padding:0 10px;-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;}
+	.myGame .mg-tpl-hd h3{font-weight:700;}
+	.myGame .mg-tpl-bd{border:1px solid #EAEAEA;background-color:#F9F9F9;overflow:hidden;margin:-1px 0 0;}
+	/*mg-tpl-btn*/
+	.myGame .mg-tpl-btn{display:block;width:96px;line-height:25px;height:25px;text-align:center;color:#333;text-decoration:none;border:1px solid #EAEAEA;font-family:微软雅黑;font-weight:700;background:url(images/mg-b1.jpg) repeat-x 0 0;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+	.myGame .mg-tpl-btn:hover{background-color:#EAEAEA;color:#333;}
 	
 	/*mg-self*/
 	.myGame{margin:12px 15px 0;min-height:500px;_height:500px;}
-	.myGame .mg-self a{display:block;border:1px solid #EAEAEA;background:url(images/mg-b1.jpg) repeat-x 0 0;outline:none;color:#333;text-decoration:none;line-height:18px;margin:10px 0; -webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+	.myGame .mg-self a{display:block;border:1px solid #EAEAEA;background:url(images/mg-b1.jpg) repeat-x 0 0;outline:none;color:#333;text-decoration:none;line-height:18px;margin:10px 0;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
 	.myGame .mg-self a:hover{background:#FCFCFC url(images/mg-b2.png) no-repeat 98% 50%;color:#333;cursor:pointer;}
 	.myGame .mg-self a:active{background:#F9F9F9 url(images/mg-b2.png) no-repeat 98.5% 50%;}
-	.myGame .mg-self .mg-self-name{font-size:14px;font-weight:700;margin:12px 0 4px;}
-	.myGame .mg-self .mg-self-time{color:#969696;}
+	.myGame .mg-self .mg-self-name,
+	.myGame .mg-detail .mg-game-intr .mg-self-name{font-size:14px;font-weight:700;margin:12px 0 4px;}
+	.myGame .mg-self .mg-self-time,
+	.myGame .mg-detail .mg-game-intr .mg-self-time{color:#969696;}
 	.myGame .mg-self dl dt,
 	.myGame .mg-self dl dd{float:left;display:inline;}
 	.myGame .mg-self dl dt{width:120px;height:57px;overflow:hidden;padding:12px 36px 12px 12px;}
@@ -21,3 +30,28 @@
 	 
 	.myGame .mg-self dl:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 	.myGame .mg-self dl{zoom:1;}
+	
+	/*mg-detail*/
+	.myGame .mg-detail .mg-game-intr{line-height:18px;position:relative;}
+	.myGame .mg-detail .mg-game-intr .mg-self-version{margin:0 0 10px;}
+	.myGame .mg-detail .mg-game-intr ul{position:absolute;right:36px;top:12px;}
+	.myGame .mg-detail .mg-game-intr .mg-tpl-btn{margin:0 0 10px;}
+	.myGame .mg-detail .mg-game-intr dt,.myGame .mg-detail .mg-game-intr dd{float:left;display:inline;}
+	.myGame .mg-detail .mg-game-intr dd{width:50%;}
+	
+	.myGame .mg-detail .mg-game-intr dl:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+	.myGame .mg-detail .mg-game-intr dl{zoom:1;}
+		/*mg-services*/
+		.myGame .mg-services li{float:left;display:inline;width:350px;overflow:hidden;background:url(images/mg-b1.jpg) repeat-x 0 0;margin:10px 5px 0;}
+		.myGame .mg-services li h4{font-size:16px;font-weight:700;font-family:微软雅黑;}
+		.myGame .mg-services .mgs-intr{color:#969696;margin:0 0 6px;}
+		.myGame .mg-services li a{display:block;color:#333;text-decoration:none;line-height:18px;border:1px solid #EAEAEA;background-repeat:no-repeat;background-position:12px 50%;padding:8px 10px 8px 88px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+		.myGame .mg-services li a:hover{background-color:#FCFCFC;color:#333;}
+		.myGame .mg-services li a:active{background-color:#F9F9F9;}
+		.myGame .mg-services .mgs-transfer-paid a{background-image:url(images/transfer-paid.png);}
+		.myGame .mg-services .mgs-rename-paid a{background-image:url(images/rename-paid.png);}
+		.myGame .mg-services .mgs-transfer-free a{background-image:url(images/transfer-free.png);}
+		.myGame .mg-services .mgs-find-free a{background-image:url(images/find-free.png);}
+		
+		.myGame .mg-services ul:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+		.myGame .mg-services ul{zoom:1;}
