@@ -14,7 +14,7 @@
 .myGame .mg-steps{width:630px;margin:0 auto;clear:both;overflow:hidden;}
 .myGame .mg-steps li{font:700 19px/35px "Microsoft YaHei";color:#ccc;background:url(images/mg-b3.png) no-repeat 100% 50%;float:left;display:inline;padding:0 36px 0 20px;}
 .myGame .mg-steps .mg-steps-4{background-image:none;}
-.myGame .mg-steps .current{color:#999;}
+.myGame .mg-steps .current{color:#333;}
 	.myGame .mg-steps ol:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 	.myGame .mg-steps ol{zoom:1;}
 /*msg*/
