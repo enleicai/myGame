@@ -6,6 +6,7 @@ transfer-paid1-4 付费转服
 
 mg-detail 选择游戏详细页
 mg-self   我的游戏
+mg-record 服务记录
 
 ======
 新增样式表
