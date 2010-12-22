@@ -108,11 +108,11 @@ background:#F9F9F9 url(images/mg-b8.png) no-repeat 12px 50%;}
 	.myGame .mg-transfer-note .mgt-ok ul:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 	.myGame .mg-transfer-note,
 	.myGame .mg-transfer-note .mgt-ok ul{zoom:1;}
-
-
-
-
-
+/*mg-record*/
+.myGame .mg-record{padding:12px;}
+.myGame .mg-record table{margin:0 auto;}
+.myGame .mg-record table th{text-align:right;}
+.myGame .mg-record table th,.myGame .mg-record table td{vertical-align:middle;height:30px;}
 
 
 
