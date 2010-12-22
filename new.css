@@ -44,7 +44,7 @@
 	.myGame .mg-detail .mg-game-intr dl:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 	.myGame .mg-detail .mg-game-intr dl{zoom:1;}
 	/*mg-services*/
-	.myGame .mg-services li{float:left;display:inline;width:350px;overflow:hidden;background:url(images/mg-b1.jpg) repeat-x 0 0;margin:10px 5px 0;}
+	.myGame .mg-services li{float:left;display:inline;width:350px;overflow:hidden;background:url(images/mg-b1.jpg) repeat-x 0 0;margin:10px 4px 0;}
 	.myGame .mg-services li h4{font-size:16px;font-weight:700;font-family:"Microsoft YaHei";}
 	.myGame .mg-services .mgs-intr{color:#969696;margin:0 0 6px;}
 	.myGame .mg-services li a{display:block;color:#333;text-decoration:none;line-height:18px;border:1px solid #EAEAEA;background-repeat:no-repeat;background-position:12px 50%;padding:8px 10px 8px 88px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
