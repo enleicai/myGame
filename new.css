@@ -1,6 +1,7 @@
 /*! charies, 2010-12-21*/
 .myGame-tit{margin:0 15px;border-bottom:1px solid #E3E3E3;}
 .myGame-tit h3{font-size:14px;font-weight:700;line-height:32px;}
+.myGame .mg-tc{text-align:center;}
 /*mg-tpl*/
 .myGame .mg-tpl-hd{font-size:13px;line-height:30px;height:30px;overflow:hidden;color:#333;background:url(images/mg-b1.jpg) repeat-x 0 0;border:1px solid #EAEAEA;padding:0 10px;-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;}
 .myGame .mg-tpl-hd h3{font-weight:700;}
@@ -61,13 +62,19 @@
 .myGame .mg-account dt{font-size:13px;line-height:30px;height:30px;overflow:hidden;color:#333;border:1px solid #EAEAEA;padding:0 10px;background-color:#F8F8F8;}
 .myGame .mg-account dt span{margin:0 24px 0 0;}
 .myGame .mg-account dd{background:url(images/mg-b1.jpg) repeat-x 0 0;position:relative;border:1px solid #EAEAEA;overflow:hidden;padding:12px;}
+.myGame .mg-account dd .mg-tpl-btn:hover{ background-image:url(images/mg-b3.jpg);}
 .myGame .mg-account .mga-selected{position:absolute;right:12px;}
 .myGame .mg-account .mga-general{line-height:18px;}
 .myGame .mg-account .mga-general span{margin:0 24px 0 0;}
 .myGame .mg-account .mga-general h4{font-size:14px;font-weight:700;margin:0 0 4px;}
 .myGame .mg-account .mga-general .mga-total{margin:10px 0 0;}
-.myGame .mg-account .mga-role,.myGame .mg-account .mga-general{float:left;display:inline;}
+.myGame .mg-account .mga-general .mga-time{color:#999;}
+.myGame .mg-account .mga-role,
+.myGame .mg-account .mga-general{float:left;display:inline;}
 .myGame .mg-account .mga-role{width:32px;height:32px;overflow:hidden;margin:12px 12px 12px 0;}
+.myGame .mg-account .mga-on-servce{margin:10px 0 0;}
+.myGame .mg-account .mga-on-servce,
+.myGame .mg-account .mga-fetrue-servce{font-weight:700;}
 	/*js-sliding*/
 	.myGame #J-sliding dt{cursor:pointer;background:#F8F8F8 url(images/mg-b4.png) no-repeat 98% 50%;}
 	.myGame #J-sliding .current dt{background-image:url(images/mg-b5.png);}
@@ -77,8 +84,8 @@
 		.myGame .mg-account dd{zoom:1;}
 /*mg-payment*/
 .myGame .mg-payment .mg-tpl-bd{padding:12px;line-height:24px;position:relative;}
-.myGame .mg-payment strong{font-size:14px;}
-.myGame .mg-payment .mg-tpl-btn{position:absolute;text-align:center;width:72px;height:27px;line-height:25px;color:#fff;left:330px;top:10px;background:url(images/mg-b7.jpg) no-repeat 0 0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}
+.myGame .mg-payment span{font-size:14px;}
+.myGame .mg-payment .mg-tpl-btn{position:absolute;text-align:center;width:72px;height:27px;line-height:25px;color:#fff;left:340px;top:10px;background:url(images/mg-b7.jpg) no-repeat 0 0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}
 /*mg-identification*/
 .myGame .mg-identification{background:url(images/mg-b1.jpg) repeat-x 0 0;border:1px solid #EAEAEA;padding:10px;margin:12px 80px;}
 .myGame .mg-identification label{display:-moz-inline-stack;display:inline-block;*display:inline;*zoom:1;width:5em;text-align:right;}
@@ -96,11 +103,12 @@ background:#F9F9F9 url(images/mg-b8.png) no-repeat 12px 50%;}
 .myGame .mg-select-server select{width:168px;}
 /*mg-transfer-note*/
 .myGame .mg-transfer-note .mgt-note,.myGame .mg-transfer-note .mgt-whether{float:left;display:inline;padding:14px 10px;overflow:hidden;}
-.myGame .mg-transfer-note .mgt-note{width:488px;line-height:16px;}
-.myGame .mg-transfer-note .mgt-whether{width:176px;border:1px solid #EAEAEA;background-color:#FFF1C1;margin:0 0 0 10px;}
+.myGame .mg-transfer-note .mgt-note{width:488px;line-height:16px;color:#555;}
+.myGame .mg-transfer-note .mgt-note h3{font-size:14px;font-weight:700;margin:0 0 12px;}
+.myGame .mg-transfer-note .mgt-whether{width:176px;border:1px solid #EAEAEA;background-color:#FFF1C1;margin:0 0 0 10px;line-height:25px;}
 .myGame .mg-transfer-note .mgt-whether li{padding:0 0 0 18px;}
 .myGame .mg-transfer-note .mgt-ok li{width:27px;float:left;display:inline;margin:0 6px;background:url(images/mg-b9.png) no-repeat 0 50%;}
-.myGame .mg-transfer-note .mgt-no h3{margin:5px 0 0;}
+.myGame .mg-transfer-note .mgt-no h3{margin:12px 0 0;}
 .myGame .mg-transfer-note .mgt-no ul{width:70px;margin:0 auto;}
 .myGame .mg-transfer-note .mgt-no li{background:url(images/mg-b10.png) no-repeat 0 50%;}
 .myGame .mg-transfer-note .mgt-whether h3{font-weight:700;text-align:center;}
@@ -113,15 +121,15 @@ background:#F9F9F9 url(images/mg-b8.png) no-repeat 12px 50%;}
 .myGame .mg-record table{margin:0 auto;}
 .myGame .mg-record table th{text-align:right;}
 .myGame .mg-record table th,.myGame .mg-record table td{vertical-align:middle;height:30px;}
-
-
-
-
-
-
-
-
-
-
+/*mg-servers-item*/
+.myGame .mg-servers-item .mg-tpl-btn{width:186px;margin:12px 0;}
+.myGame .mg-servers-item dl{float:left;display:inline;width:50%;}
+.myGame .mg-servers-item dl dt{font-weight:700;}
+.myGame .mg-servers-item .mg-tpl-bd{padding:10px;}
+	/*js J-popUp*/
+	.myGame #J-popUp{position:relative;display:none;}
+	.myGame #J-popUp .close{position:absolute;right:12px;top:6px;}
+		.myGame .mg-servers-item .mg-tpl-bd:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+		.myGame .mg-servers-item .mg-tpl-bd{zoom:1;}
 
 

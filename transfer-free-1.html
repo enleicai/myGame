@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>免费转服-选择角色</title>
-
 <link href="http://my.xoyo.com/application/my/view/css/basic.css" rel="stylesheet" type="text/css">
 <link href="http://my.xoyo.com/application/my/view/css/main.css" rel="stylesheet" type="text/css">
 <link href="new.css" rel="stylesheet" type="text/css">
@@ -11,6 +10,8 @@
 <script>
 //滑动门 js钩子 id="J-sliding"
 $(function(){$("#J-sliding dt").click(function(){$(this).parents("dl").addClass("current").siblings("dl").removeClass("current")})});
+//弹出 服务器列表
+$(function(){$("#J-popUp-btn,#J-popUp .close").click(function(){$("#J-popUp").toggle()})});
 </script>
 </head>
 <body>
@@ -29,7 +30,27 @@ $(function(){$("#J-sliding dt").click(function(){$(this).parents("dl").addClass(
 						<li class="mg-steps-4">4.操作成功</li>
 					</ol>
 				</div>
-				<div class="msg msg-error">
+				<div class="mg-servers-item">
+					<a id="J-popUp-btn" class="mg-tpl-btn" href="#">查看开放免费转服服务器列表</a>
+					<div id="J-popUp">
+						<div class="mg-tpl-bd">
+							<dl>
+								<dt>转出服务器列表</li>
+								<dd>服务器名称...</li>
+								<dd>服务器名称...</li>
+								<dd>服务器名称...</li>
+							</dl>
+							<dl>
+								<dt>转入服务器列表</li>
+								<dd>服务器名称...</li>
+								<dd>服务器名称...</li>
+								<dd>服务器名称...</li>
+							</dl>
+						</div>
+						<a href="#" class="close">关闭</a>
+					</div>
+				</div>
+				<div class="msg msg-error" style="display:none;">
 					<p>
 						 错误提示
 					</p>
