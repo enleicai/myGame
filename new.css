@@ -1,62 +1,127 @@
-@charset "utf-8";
-/**
-* Name: 免费转服 角色服务
-* Author: charies
-* Date: 2010-12-16
-*/
+/*! charies, 2010-12-21*/
 .myGame-tit{margin:0 15px;border-bottom:1px solid #E3E3E3;}
 .myGame-tit h3{font-size:14px;font-weight:700;line-height:32px;}
-	/*mg-tpl*/
-	.myGame .mg-tpl-hd{font-size:13px;line-height:30px;height:30px;overflow:hidden;color:#333;background:url(images/mg-b1.jpg) repeat-x 0 0;border:1px solid #EAEAEA;padding:0 10px;-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;}
-	.myGame .mg-tpl-hd h3{font-weight:700;}
-	.myGame .mg-tpl-bd{border:1px solid #EAEAEA;background-color:#F9F9F9;overflow:hidden;margin:-1px 0 0;}
-	/*mg-tpl-btn*/
-	.myGame .mg-tpl-btn{display:block;width:96px;line-height:25px;height:25px;text-align:center;color:#333;text-decoration:none;border:1px solid #EAEAEA;font-family:"微软雅黑";font-weight:700;background:url(images/mg-b1.jpg) repeat-x 0 0;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;outline:none;}
-	.myGame .mg-tpl-btn:hover{background-color:#EAEAEA;color:#333;}
-	/*mg-steps*/
-	.myGame .mg-steps li{
-		list-style:inside decimal;
-		font:700 18px "微软雅黑";
-		color:#ccc;}
-	
-	/*mg-self*/
-	.myGame{margin:12px 15px 0;min-height:500px;_height:500px;}
-	.myGame .mg-self a{display:block;border:1px solid #EAEAEA;background:url(images/mg-b1.jpg) repeat-x 0 0;outline:none;color:#333;text-decoration:none;line-height:18px;margin:10px 0;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
-	.myGame .mg-self a:hover{background:#FCFCFC url(images/mg-b2.png) no-repeat 98% 50%;color:#333;cursor:pointer;}
-	.myGame .mg-self a:active{background:#F9F9F9 url(images/mg-b2.png) no-repeat 98.5% 50%;}
-	.myGame .mg-self .mg-self-name,
-	.myGame .mg-detail .mg-game-intr .mg-self-name{font-size:14px;font-weight:700;margin:12px 0 4px;}
-	.myGame .mg-self .mg-self-time,
-	.myGame .mg-detail .mg-game-intr .mg-self-time{color:#969696;}
-	.myGame .mg-self dl dt,
-	.myGame .mg-self dl dd{float:left;display:inline;}
-	.myGame .mg-self dl dt{width:120px;height:57px;overflow:hidden;padding:12px 36px 12px 12px;}
-	.myGame .mg-self dl dd{width:70%;}
-	 
+/*mg-tpl*/
+.myGame .mg-tpl-hd{font-size:13px;line-height:30px;height:30px;overflow:hidden;color:#333;background:url(images/mg-b1.jpg) repeat-x 0 0;border:1px solid #EAEAEA;padding:0 10px;-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;}
+.myGame .mg-tpl-hd h3{font-weight:700;}
+.myGame .mg-tpl-bd{border:1px solid #EAEAEA;background-color:#F9F9F9;overflow:hidden;margin:-1px 0 0;}
+/*mg-tpl-btn*/
+.myGame .mg-btn-wrap{text-align:center;margin:24px 0 10px;}
+.myGame .mg-tpl-btn{display:-moz-inline-stack;display:inline-block;*display:inline;*zoom:1;width:96px;line-height:25px;height:25px;text-align:center;color:#333;text-decoration:none;border:1px solid #EAEAEA;font-family:"Microsoft YaHei";font-weight:700;background:url(images/mg-b1.jpg) repeat-x 0 0;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;outline:none;}
+.myGame .mg-tpl-btn:hover{background-color:#EAEAEA;color:#333;}
+/*mg-steps*/
+.myGame .mg-steps{width:618px;margin:0 auto;clear:both;overflow:hidden;}
+.myGame .mg-steps li{font:700 19px/35px "Microsoft YaHei";color:#ccc;background:url(images/mg-b3.png) no-repeat 100% 50%;float:left;display:inline;padding:0 36px 0 20px;}
+.myGame .mg-steps .mg-steps-4{background-image:none;}
+.myGame .mg-steps .current{color:#999;}
+	.myGame .mg-steps ol:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+	.myGame .mg-steps ol{zoom:1;}
+/*msg*/
+.myGame .msg{line-height:21px;padding:6px 8px;font-size:14px;clear:both;overflow:hidden;margin:6px 24px;}
+.myGame .msg-error{border:1px solid #F2577E;background-color:#FFDFDF;}
+/*mg-self*/
+.myGame{margin:12px 15px 0;min-height:500px;_height:500px;}
+.myGame .mg-self a{display:block;border:1px solid #EAEAEA;background:url(images/mg-b1.jpg) repeat-x 0 0;outline:none;color:#333;text-decoration:none;line-height:18px;margin:10px 0;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+.myGame .mg-self a:hover{background:#FCFCFC url(images/mg-b2.png) no-repeat 98% 50%;color:#333;cursor:pointer;}
+.myGame .mg-self a:active{background:#F9F9F9 url(images/mg-b2.png) no-repeat 98.5% 50%;}
+.myGame .mg-self .mg-self-name,
+.myGame .mg-detail .mg-game-intr .mg-self-name{font-size:14px;font-weight:700;margin:12px 0 4px;}
+.myGame .mg-self .mg-self-time,
+.myGame .mg-detail .mg-game-intr .mg-self-time{color:#969696;}
+.myGame .mg-self dl dt,
+.myGame .mg-self dl dd{float:left;display:inline;}
+.myGame .mg-self dl dt{width:120px;height:57px;overflow:hidden;padding:12px 36px 12px 12px;}
+.myGame .mg-self dl dd{width:70%;}
 	.myGame .mg-self dl:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 	.myGame .mg-self dl{zoom:1;}
-	
-	/*mg-detail*/
-	.myGame .mg-detail .mg-game-intr{line-height:18px;position:relative;}
-	.myGame .mg-detail .mg-game-intr .mg-self-version{margin:0 0 10px;}
-	.myGame .mg-detail .mg-game-intr ul{position:absolute;right:36px;top:12px;}
-	.myGame .mg-detail .mg-game-intr .mg-tpl-btn{margin:0 0 10px;}
-	.myGame .mg-detail .mg-game-intr dt,.myGame .mg-detail .mg-game-intr dd{float:left;display:inline;}
-	.myGame .mg-detail .mg-game-intr dd{width:50%;}
-	
+/*mg-detail*/
+.myGame .mg-detail .mg-game-intr{line-height:18px;position:relative;}
+.myGame .mg-detail .mg-game-intr .mg-self-version{margin:0 0 10px;}
+.myGame .mg-detail .mg-game-intr ul{position:absolute;right:36px;top:12px;}
+.myGame .mg-detail .mg-game-intr .mg-tpl-btn{margin:0 0 10px;}
+.myGame .mg-detail .mg-game-intr dt,.myGame .mg-detail .mg-game-intr dd{float:left;display:inline;}
+.myGame .mg-detail .mg-game-intr dd{width:50%;}
 	.myGame .mg-detail .mg-game-intr dl:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 	.myGame .mg-detail .mg-game-intr dl{zoom:1;}
-		/*mg-services*/
-		.myGame .mg-services li{float:left;display:inline;width:350px;overflow:hidden;background:url(images/mg-b1.jpg) repeat-x 0 0;margin:10px 5px 0;}
-		.myGame .mg-services li h4{font-size:16px;font-weight:700;font-family:"微软雅黑";}
-		.myGame .mg-services .mgs-intr{color:#969696;margin:0 0 6px;}
-		.myGame .mg-services li a{display:block;color:#333;text-decoration:none;line-height:18px;border:1px solid #EAEAEA;background-repeat:no-repeat;background-position:12px 50%;padding:8px 10px 8px 88px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
-		.myGame .mg-services li a:hover{background-color:#FCFCFC;color:#333;}
-		.myGame .mg-services li a:active{background-color:#F9F9F9;}
-		.myGame .mg-services .mgs-transfer-paid a{background-image:url(images/transfer-paid.png);}
-		.myGame .mg-services .mgs-rename-paid a{background-image:url(images/rename-paid.png);}
-		.myGame .mg-services .mgs-transfer-free a{background-image:url(images/transfer-free.png);}
-		.myGame .mg-services .mgs-find-free a{background-image:url(images/find-free.png);}
-		
+	/*mg-services*/
+	.myGame .mg-services li{float:left;display:inline;width:350px;overflow:hidden;background:url(images/mg-b1.jpg) repeat-x 0 0;margin:10px 5px 0;}
+	.myGame .mg-services li h4{font-size:16px;font-weight:700;font-family:"Microsoft YaHei";}
+	.myGame .mg-services .mgs-intr{color:#969696;margin:0 0 6px;}
+	.myGame .mg-services li a{display:block;color:#333;text-decoration:none;line-height:18px;border:1px solid #EAEAEA;background-repeat:no-repeat;background-position:12px 50%;padding:8px 10px 8px 88px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+	.myGame .mg-services li a:hover{background-color:#FCFCFC;color:#333;}
+	.myGame .mg-services li a:active{background-color:#F9F9F9;}
+	.myGame .mg-services .mgs-transfer-paid a{background-image:url(images/transfer-paid.png);}
+	.myGame .mg-services .mgs-rename-paid a{background-image:url(images/rename-paid.png);}
+	.myGame .mg-services .mgs-transfer-free a{background-image:url(images/transfer-free.png);}
+	.myGame .mg-services .mgs-find-free a{background-image:url(images/find-free.png);}
 		.myGame .mg-services ul:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 		.myGame .mg-services ul{zoom:1;}
+/*mg-accout*/
+.myGame .mg-account{margin:12px 0;}
+.myGame .mg-account dt{font-size:13px;line-height:30px;height:30px;overflow:hidden;color:#333;border:1px solid #EAEAEA;padding:0 10px;background-color:#F8F8F8;}
+.myGame .mg-account dt span{margin:0 24px 0 0;}
+.myGame .mg-account dd{background:url(images/mg-b1.jpg) repeat-x 0 0;position:relative;border:1px solid #EAEAEA;overflow:hidden;padding:12px;}
+.myGame .mg-account .mga-selected{position:absolute;right:12px;}
+.myGame .mg-account .mga-general{line-height:18px;}
+.myGame .mg-account .mga-general span{margin:0 24px 0 0;}
+.myGame .mg-account .mga-general h4{font-size:14px;font-weight:700;margin:0 0 4px;}
+.myGame .mg-account .mga-general .mga-total{margin:10px 0 0;}
+.myGame .mg-account .mga-role,.myGame .mg-account .mga-general{float:left;display:inline;}
+.myGame .mg-account .mga-role{width:32px;height:32px;overflow:hidden;margin:12px 12px 12px 0;}
+	/*js-sliding*/
+	.myGame #J-sliding dt{cursor:pointer;background:#F8F8F8 url(images/mg-b4.png) no-repeat 98% 50%;}
+	.myGame #J-sliding .current dt{background-image:url(images/mg-b5.png);}
+	.myGame #J-sliding dd{display:none;}
+	.myGame #J-sliding .current dd{display:block;}
+		.myGame .mg-account dd:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+		.myGame .mg-account dd{zoom:1;}
+/*mg-payment*/
+.myGame .mg-payment .mg-tpl-bd{padding:12px;line-height:24px;position:relative;}
+.myGame .mg-payment strong{font-size:14px;}
+.myGame .mg-payment .mg-tpl-btn{position:absolute;text-align:center;width:72px;height:27px;line-height:25px;color:#fff;left:330px;top:10px;background:url(images/mg-b7.jpg) no-repeat 0 0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}
+/*mg-identification*/
+.myGame .mg-identification{background:url(images/mg-b1.jpg) repeat-x 0 0;border:1px solid #EAEAEA;padding:10px;margin:12px 80px;}
+.myGame .mg-identification label{display:-moz-inline-stack;display:inline-block;*display:inline;*zoom:1;width:5em;text-align:right;}
+.myGame .mg-identification input{vertical-align:middle;line-height:1.4;}
+.myGame .mg-identification .mgi-id input,.myGame .mg-identification .mgi-mail input{padding:2px;width:200px;margin:0 0 6px;}
+.myGame .mg-identification .mgi-agreement{padding:0 0 0 60px;}
+.myGame .mg-identification span{margin:0 0 0 6px;color:#969696;}
+.myGame .mg-identification .tips{margin:0 0 12px;font-size:13px;}
+/*mg-succeed*/
+.myGame .mg-succeed{line-height:16px;padding:12px 12px 12px 70px;margin:12px 0;
+background:#F9F9F9 url(images/mg-b8.png) no-repeat 12px 50%;}
+.myGame .mg-succeed h3{font-size:14px;font-weight:700;margin:0 0 4px;}
+/*mg-select-server*/
+.myGame .mg-select-server{text-align:center;margin:12px 0;}
+.myGame .mg-select-server select{width:168px;}
+/*mg-transfer-note*/
+.myGame .mg-transfer-note .mgt-note,.myGame .mg-transfer-note .mgt-whether{float:left;display:inline;padding:14px 10px;overflow:hidden;}
+.myGame .mg-transfer-note .mgt-note{width:488px;line-height:16px;}
+.myGame .mg-transfer-note .mgt-whether{width:176px;border:1px solid #EAEAEA;background-color:#FFF1C1;margin:0 0 0 12px;}
+.myGame .mg-transfer-note .mgt-whether li{padding:0 0 0 18px;}
+.myGame .mg-transfer-note .mgt-ok li{width:27px;float:left;display:inline;margin:0 6px;background:url(images/mg-b9.png) no-repeat 0 50%;}
+.myGame .mg-transfer-note .mgt-no h3{margin:5px 0 0;}
+.myGame .mg-transfer-note .mgt-no ul{width:70px;margin:0 auto;}
+.myGame .mg-transfer-note .mgt-no li{background:url(images/mg-b10.png) no-repeat 0 50%;}
+.myGame .mg-transfer-note .mgt-whether h3{font-weight:700;text-align:center;}
+	.myGame .mg-transfer-note:after,
+	.myGame .mg-transfer-note .mgt-ok ul:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+	.myGame .mg-transfer-note,
+	.myGame .mg-transfer-note .mgt-ok ul{zoom:1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
