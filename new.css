@@ -1,6 +1,7 @@
 /*! charies, 2010-12-21*/
 .myGame-tit{margin:0 15px;border-bottom:1px solid #E3E3E3;}
 .myGame-tit h3{font-size:14px;font-weight:700;line-height:32px;}
+.myGame-tit h3 a{float:right;font-size:12px;font-weight:400;}
 .myGame .mg-tc{text-align:center;}
 /*mg-tpl*/
 .myGame .mg-tpl-hd{font-size:13px;line-height:30px;height:30px;overflow:hidden;color:#333;background:url(images/mg-b1.jpg) repeat-x 0 0;border:1px solid #EAEAEA;padding:0 10px;-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;}
