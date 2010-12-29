@@ -41,8 +41,9 @@
 .myGame .mg-detail .mg-game-intr .mg-self-version{margin:0 0 10px;}
 .myGame .mg-detail .mg-game-intr ul{position:absolute;right:36px;top:12px;}
 .myGame .mg-detail .mg-game-intr .mg-tpl-btn{margin:0 0 10px;}
+.myGame .mg-detail .mg-game-intr dl{margin:0 0 10px;}
 .myGame .mg-detail .mg-game-intr dt,.myGame .mg-detail .mg-game-intr dd{float:left;display:inline;}
-.myGame .mg-detail .mg-game-intr dt{margin:0 30px 10px 10px;}
+.myGame .mg-detail .mg-game-intr dt{margin:0 30px 0 10px;}
 .myGame .mg-detail .mg-game-intr dd{width:50%;}
 	.myGame .mg-detail .mg-game-intr dl:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 	.myGame .mg-detail .mg-game-intr dl{zoom:1;}
